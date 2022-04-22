@@ -41,7 +41,7 @@ int main()
 	}
 
 	// открываем файлы с числами и заполняем матрицы
-	file1.open("numbers1.txt");
+	file1.open("A.txt");
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < N; j++)
@@ -51,7 +51,7 @@ int main()
 	}
 	file1.close();
 
-	file2.open("numbers2.txt");
+	file2.open("B.txt");
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < N; j++)
@@ -61,7 +61,7 @@ int main()
 	}
 	file2.close();
 
-	file3.open("numbers3.txt");
+	file3.open("F.txt");
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < N; j++)
