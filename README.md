@@ -1,56 +1,45 @@
-# Лабораторные работы по предмету "Параллельное программирование".
+# Laboratory work on the subject "Parallel programming".
 
 
-<b>Задание: </b>
-Разработать программу на языке C/C++ в соответствии с вариантами заданий к лабораторной работе, приведенным в таблице 1.
-Во всех заданиях требуется создать матрицу (вектор) или несколько матриц (векторов) одинаковой размерности, указанной в таблице 1, заполнить их считанными из текстового файла значениями. Текстовые файлы следует предварительно подготовить, заполнив их случайными числами. Затем реализовать задание. В конце вывести результаты вычислений опять в текстовый файл.
+<b>Assignment: </b>
+Develop a program in C / C ++ in accordance with the options for laboratory work given in table 1.
+In all tasks, it is required to create a matrix (vector) or several matrices (vectors) of the same dimension indicated in Table 1, fill them with values ​​read from a text file. Text files should be prepared in advance by filling them with random numbers. Then implement the task. At the end, output the calculation results again to a text file.
 
-Интерфейс программы – консольное приложение. После выполнения всех вычислений программа печатает общее время работы (в секундах).
+The program interface is a console application. After all calculations are done, the program prints the total running time (in seconds).
 
-Таблица 1. Описание заданий
+Table 1. Description of tasks
 
 <table>
   <tr>
-    <td>Размерность массива или матрицы</td>
-    <td>Тип данных</td>
-    <td>Описание задания</td>
+    <td>Dimension of array or matrix</td>
+    <td>Data type</td>
+    <td>Task description</td>
   </tr>
   <tr>
     <td>[10*10; 3000*3000]</td>
     <td>double</td>
-    <td>Вычислить произведение плотных матриц C = A*B*F</td>
+    <td>Compute the product of dense matrices C = A*B*F</td>
   </tr>
   </table>
 
 
-Для выполнения работы вначале были созданы 4 файла:
+To do the job, 4 files were first created:
 
-•	A.txt для матрицы А;
+• A.txt for matrix A;
 
-•	B.txt для матрицы B;
+• B.txt for matrix B;
 
-•	F.txt для матрицы F;
+• F.txt for matrix F;
 
-•	res.txt для записи результата умножения.
+• res.txt to record the result of the multiplication.
 
-Во время выполнения требуется ввести размерность матрицы.
+At runtime, you need to enter the dimension of the matrix.
 
-Алгоритм состоит из умножения матрицы А на матрицу B, результат записываю в матрицу D. После перемножаю полученную матрицу D и матрицу F, результат в матрицу С.
+The algorithm consists of multiplying matrix A by matrix B, the result is written into matrix D. After that, I multiply the resulting matrix D and matrix F, the result into matrix C.
 
-# Тестирование:
-
-![image](https://user-images.githubusercontent.com/76211121/164733151-ffac7b12-554f-4152-b042-4e67349dacb0.png)
-
-Рисунок 1 – Визуализация правильности умножения
-
-![image](https://user-images.githubusercontent.com/76211121/164733310-f84745d7-d1ec-4258-af50-5287a8ccafc6.png)
-
-Рисунок 2 – Файл res.txt
-
-# Местоположение файлов:
-* par_lab1 - последовательный алгоритм умножения матриц;
-* par_lab2 - параллельный алгоритм умножения матриц, используя MPI (операции “точка-точка”);
-* par_lab3 - параллельный алгоритм умножения матриц, используя MPI (коллективные операции передачи данных);
-* par_lab4 - параллельный алгоритм умножения матриц, используя OpenMP (распараллеливание по данным с помощью директив for и reduction);
-* par_lab5 - параллельный алгоритм умножения матриц, используя OpenMP (распараллеливание по задачам при помощи директивы sections).
-* 
+# File locations:
+* par_lab1 - sequential matrix multiplication algorithm;
+* par_lab2 - parallel algorithm for matrix multiplication using MPI (point-to-point operations);
+* par_lab3 - parallel matrix multiplication algorithm using MPI (collective data transfer operations);
+* par_lab4 - parallel matrix multiplication algorithm using OpenMP (data parallelization using for and reduction directives);
+* par_lab5 - parallel algorithm for matrix multiplication using OpenMP (parallelization across tasks using the sections directive).
