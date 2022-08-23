@@ -43,3 +43,12 @@ The algorithm consists of multiplying matrix A by matrix B, the result is writte
 * par_lab3 - parallel matrix multiplication algorithm using MPI (collective data transfer operations);
 * par_lab4 - parallel matrix multiplication algorithm using OpenMP (data parallelization using for and reduction directives);
 * par_lab5 - parallel algorithm for matrix multiplication using OpenMP (parallelization across tasks using the sections directive).
+
+
+# Visualization of the correct operation of the application
+
+![image](https://user-images.githubusercontent.com/76211121/186193567-d79f230a-b3d7-4052-9235-7f690ea9658f.png)
+<p align=center>Visualization of the correct operation of the application</p>
+
+![image](https://user-images.githubusercontent.com/76211121/186193725-48e7c6d7-a6e6-4d72-a44a-3f0f8c2c1dda.png)
+<p align=center>File contents res.txt</p>
